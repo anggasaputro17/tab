@@ -1,0 +1,270 @@
+<link rel="stylesheet" href="//static.zalora.com/css/onsite.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, height=device-height"/>
+<style>
+body{background:#fff!important}
+@font-face {
+  font-family: 'Apercu';
+  src: url('http://static01-ec-sg.zalora.com/fonts/apercu/apercu_regular-webfont.woff2') format('woff2'),
+     url('http://static01-ec-sg.zalora.com/fonts/apercu/apercu_regular-webfont.woff') format('woff');
+}
+@media only screen 
+  and (max-device-width: 320px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .wrapper-1 a>.content>.text {
+    font-size:.8em;
+  }
+  
+}
+html {
+  height:100%;
+}
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+h1, h2, h3 {
+  font-family: 'Apercu';
+}
+td { font-size:11px; }
+ol.tree
+{
+  padding: 0 10px 0 10px;
+  font-family: 'Apercu';
+  margin-top: 0px;
+  font-size:12px;
+}
+ol.tree > li 
+{ 
+  position: relative; 
+  /*margin-left: -19px;*/
+  list-style: none;
+  color:#717171;
+  border-bottom: 1px solid #d0d0d0;
+    padding: .7em 0em .7em .5em;
+
+}
+ol.tree > li:after {
+  
+}
+li input {
+  position: absolute;
+  left: 0;
+  margin-left: 0;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+  height: 2.8em;
+  width: 100%;
+  top: 0;
+}
+li input + .arrowImage + ol {
+  /*background: url(toggle-small-expand.png) 40px 0 no-repeat;*/
+  margin: -0.938em 0 0 -44px; /* 15px */
+  height: 1em;
+}
+li input + .arrowImage + ol > li { 
+  display: none; 
+  margin-left: -18px!important;
+    padding-left: .7em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: .7em;
+    background: #f6f6f6;
+    border-top: 1px solid #ccc;
+    text-align: justify;
+  line-height:1.4em;
+  margin-top: 3px !important;
+}
+li label {
+  /*background: url(folder-horizontal.png) 15px 1px no-repeat;*/
+  cursor: pointer;
+  display: block;
+}
+li input:checked + .arrowImage + ol {
+  /*background: url(toggle-small.png) 40px 5px no-repeat;*/
+  /*margin: -1.25em 0 0 -44px;*/ /* 20px */
+  padding: 1.5em 0 0 54px;
+  height: auto;
+}
+li input:checked + .arrowImage + ol > li { 
+  display: block; margin: 0 0 0.125em;  /* 2px */
+}
+li input:checked + .arrowImage + ol > li:last-child { 
+  0 0 -.7em;
+}
+.wrapper-1 {
+  font-family: 'Apercu';
+  width:100%
+}
+.wrapper-1 a {
+  color: #111;
+}
+.wrapper-1 a > .content {
+  width: 49.5%;
+  padding-top: 2em;
+  float: left;
+  text-align:center;
+  min-height: 9.5em;
+}
+.wrapper-1 a > .content > .text {
+  margin-bottom: 2em;
+  margin-top: .5em;
+}
+.wrapper-1 a > .one, .wrapper-1 a > .two {
+  border-bottom:1px solid #CCC;
+}
+.wrapper-1 a > .one, .wrapper-1 a > .three {
+  border-right:1px solid #CCC;
+}
+.wrapper-2, .wrapper-3, .wrapper-4, .wrapper-5, .wrapper-6 {
+  background-color:#FFFFFF;
+  font-family: 'Apercu';
+  width:94%;
+  min-height: 100%;
+  display:block;
+  margin:0;
+  clear:both;
+}
+
+.wrapper-7 {
+    background-color:#FFFFFF;
+  font-family: 'Apercu';
+  width:100%;
+  min-height: 100%;
+  display:block;
+  margin:0;
+  clear:both;
+}
+
+.wrapper-8 {
+    background-color:#FFFFFF;
+  font-family: 'Apercu';
+  width:100%;
+  display:block;
+  margin:0;
+  clear:both;
+  border-top: 1px solid #CCC;
+  padding-top:5px;
+}
+.wrapper-2, .wrapper-3, .wrapper-4, .wrapper-5, .wrapper-6, .wrapper-7 > .title {
+  
+  font-size:1em;
+    border-bottom: 1px solid #CCC;
+    padding: .5em .5em;
+}
+.wrapper-2, .wrapper-3, .wrapper-4, .wrapper-5, .wrapper-6, .wrapper-7 > .content {
+  line-height: 1.4em;
+  padding: .7em;
+  text-align: left;
+  min-height: 100%;
+}
+li input + .arrowImage {
+  width: 23px;
+    height: 12px;
+    top: 14px;
+    left: auto;
+    right: 7px;
+    background-image: url(http://static.id.zalora.net/cms/faq/mobile-new/panah.png);
+    background-position: 0 -28px;
+    position: absolute;
+    overflow: hidden;
+}
+li input:checked + .arrowImage { 
+  width: 23px;
+    height: 12px;
+    top: 14px;
+    left: auto;
+    right: 7px;
+    background-image: url(http://static.id.zalora.net/cms/faq/mobile-new/panah.png);
+    background-position: 0 0;
+  position: absolute;
+    overflow: hidden;
+}
+
+.cms-spacer50{
+  padding-bottom: 50px;
+}
+
+.align-center {text-align: center;}
+    .cms-pl-mtop-lg {margin-top: 50px;}
+    .cms-pl-mtop-md {margin-top: 35px;}
+    .cms-pl-mtop-dd {margin-top: 25px;}
+    .cms-res-font-lg {font-size: 1.5em;line-height: 1.5em;}
+    .cms-res-font-sm {font-size: 1em;line-height: 1.5em;padding-left: 20px;padding-right: 20px;}
+    /* override paper to remove borders */
+    .paper {margin:0px;border: 0px;}
+    .full a {text-decoration: none !important;color:#000}
+
+    .cms-hp-section-header {width:100%;text-align:center}
+    .full a {text-decoration: none !important;color:#000}
+    .align-center {text-align: center;}
+
+    input[type=checkbox], input[type=radio] {
+    width: 700px;
+}
+
+</style>
+<br><br>
+<p style="font-size:18px;text-align:center;">ESTIMASI WAKTU PENGIRIMAN</p><br><br>
+<ol class="tree" style=" width:650px; margin-left:-13px;">
+
+
+<li><label for="content1" style="width:700px;">NANGGROE ACEH DARUSSALAM</label> <input id="content1" style="width:700px!important;" type="checkbox" />
+<div class="arrowImage"> </div>
+<ol>
+<li>
+
+</li>
+</ol>
+</li>
+
+<li><label for="content1" style="width:700px;">NUSA TENGGARA BARAT</label> <input id="content1" style="width:700px!important;" type="checkbox" />
+<div class="arrowImage"> </div>
+<ol>
+<li>
+
+</li>
+</ol>
+</li>
+
+
+<li><label for="content1" style="width:700px;">SUMATERA BARAT</label> <input id="content1" style="width:700px!important;" type="checkbox" />
+<div class="arrowImage"> </div>
+<ol>
+<li>
+
+</li>
+</ol>
+</li>
+
+<li><label for="content1" style="width:700px;">SUMATERA SELATAN</label> <input id="content1" style="width:700px!important;" type="checkbox" />
+<div class="arrowImage"> </div>
+<ol>
+<li>
+
+</li>
+</ol>
+</li>
+
+<li><label for="content1" style="width:700px;">SUMATERA UTARA</label> <input id="content1" style="width:700px!important;" type="checkbox" />
+<div class="arrowImage"> </div>
+<ol>
+<li>
+
+</li>
+</ol>
+</li>
+
+<li><label for="content1" style="width:700px;">WARO</label> <input id="content1" style="width:700px!important;" type="checkbox" />
+<div class="arrowImage"> </div>
+<ol>
+<li>
+
+</li>
+</ol>
+</li>
+
+</ol>
